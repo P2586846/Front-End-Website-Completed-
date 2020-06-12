@@ -1,0 +1,741 @@
+body{
+	margin:0px;
+    padding: 0px;
+}
+/*nav bar start*/
+header{
+	background-image: url("../images/background.jpg");
+	min-height:160px;
+}
+
+header nav{
+	float:right;
+	margin-top:15px;
+	margin-right: 100px;
+	overflow:hidden;
+	position:relative;
+}
+
+header a{
+	color:black;
+	text-decoration:none;
+}
+
+.button1,.button2,.button3,.button4{
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: "Arial";
+	margin: 10px;
+	position: relative;
+	overflow: hidden;
+}
+ 
+.button1{
+	animation-name:navbtn;
+	animation-duration: 2s;
+}
+
+.button2{
+	animation-name:navbtn;
+	animation-duration:1.5s;
+}
+
+.button3{
+	animation-name:navbtn;
+	animation-duration:1s;
+}
+  
+@keyframes navbtn{
+	0%{
+		transform:translateX(120px);
+		opacity:0;
+	  }
+	100%{
+		transform:translateX(0);
+		 opacity:1;
+	  }
+ }
+
+  /*nav bar end*/
+header #logo img{
+	height:130px;
+	width:200px;
+	float:left;
+	padding:15px;
+	margin-left: 40px;
+	animation-name:moveToleft;
+	animation-duration:2s;
+	
+}
+@keyframes moveToleft{
+	0%{
+		transform:translateX(120px);
+		opacity:0;
+	}
+	100%{
+		transform:translateX(0);
+		opacity:1;
+	}
+}
+
+/*start of about page*/
+#about{
+	width:100%;/*change this to make any space between the box*/
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+}
+
+.topleft{
+	width:33%;
+	height:355px;
+	text-align:left;
+	font-size:16px;
+	font-family:"Arial";
+	margin-left:24px;
+	border-style: solid;
+	border-color: yellow;	
+}
+
+.aboutusright{
+	width:33%;
+	height:355px;
+	margin-right:10px;
+	font-size:16px;
+	font-family:"Arial";
+	border-style: solid;
+	border-color: yellow;	
+	order:3;
+}
+.topleft h2, .aboutusright h2{
+	background-color: #99c2ff;
+}
+
+#about2 .aboutus1{
+	width:34%;
+	height:auto;
+}
+#about2 .aboutus1 img{
+	width:100%; 
+	height:100%;
+}
+
+/*end of about page*/
+
+
+/*start of contact page*/
+#enteryourname{
+font-size:30px;
+
+}
+
+#contactus-container{
+	width:94%;/*change this to make any space between the box*/
+	margin:auto;
+	display:flex;
+	justify-content:space-around;	
+}
+
+#contactus .contact1{
+	width:30%;
+	text-align:center;
+	padding:10px;
+	margin-top:10px;	
+}
+
+.contact1 h1{
+	background-color:#80b3ff;
+}
+
+.contact1 li{
+	text-align: left;	
+	list-style-type:none;
+	font-size:20px;
+	text-align:center;
+}
+
+#contactus .contact2{
+	width:30%;
+	text-align:center;
+	padding:10px;
+	margin-top:10px;	
+}
+
+.contact2 h1{
+	background-color:#80b3ff;
+}
+
+.contact2 li{
+	text-align: left;	
+	list-style-type:none;
+	font-size:20px;
+	text-align:center;
+}
+
+#contactus .contact3{
+	width:30%;
+	text-align:center;
+	padding:10px;
+	margin-top:10px;
+}
+
+.contact3 h1{
+	background-color:#80b3ff;
+}
+
+
+.contact3 .formcu{
+	text-align: left;
+	margin-left:10% ;
+    margin-right:10%;
+}
+
+.contact3 .formcu input{
+	width:83%;
+	padding:13px;
+}
+
+.contact3 .formcu textarea{
+	resize: none;
+	width:83%;
+	padding:13px;
+}
+
+.contact3 .formcu .button_1{
+	background-color:#80b3ff;
+	width:95%;
+	height:60px;
+	font-size: 20px;
+	font-weight:bold;
+	border-radius:3px;
+	margin-bottom:10px;
+}
+
+.mapwrapper{
+	position:relative;
+	padding-bottom:30%;
+	height:0%;
+}
+
+.mapwrapper iframe{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+/*end of contact page*/
+
+
+/*product*/
+/*Laptops section*/
+#product-container1{
+	width:94%;/*change this to make any space between the box*/
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+}
+
+.section-header{
+    font-family: "Arial";
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-size: 40px;
+}
+
+#products .laptop_lenovo{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#products .laptop_lenovo img{
+	width:250px; 
+	height:250px;
+}
+
+#products .hp_laptop{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+
+}
+#products .hp_laptop img{
+	width:250px; 
+	height:250px;
+}
+
+#products .acer_product{
+	width:32%;
+text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#products .acer_product img{
+	width:250px; 
+	height:250px;
+}
+
+.laptop_lenovo h1, .hp_laptop h1, .acer_product h1{
+	text-align: center;	
+}
+
+#product-container2{
+	width:94%;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+}
+
+#products2 .lenovoyoga{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:50px;	
+}
+
+#products2 .lenovoyoga img{
+	width:250px; 
+	height:250px;
+}
+
+#products2 .hp{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:50px;	
+}
+
+#products2 .hp img{
+	width:250px; 
+	height:250px;
+}
+
+#products2 .asus{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:50px;	
+}
+
+#products2 .asus img{
+	width:250px; 
+	height:250px;
+}
+
+.lenovoyoga h1, .hp h1, .asus h1{
+	text-align: center;	
+}
+
+#macbooks-container{
+	width:94%;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+	
+}
+
+#macbooks .macbookleft{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#macbooks .macbookleft img{
+	width:270px; 
+	height:250px;
+}
+
+#macbooks .macbookcenter{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#macbooks .macbookcenter img{
+	width:250px; 
+	height:250px;
+}
+
+#macbooks .macbookright{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#macbooks .macbookright img{
+	width:250px; 
+	height:250px;
+}
+
+.macbookleft h1, .macbookcenter h1, .macbookright h1{
+	text-align: center;	
+}
+
+#softwares-container{
+	width:94%;
+	margin:auto;
+	display:flex;
+	justify-content:space-around;
+	
+}
+
+#softwares .MSWindows{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#softwares .MSWindows img{
+	width:250px; 
+	height:250px;
+}
+
+#softwares .softwaremiddle{
+	width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#softwares .softwaremiddle img{
+	width:250px; 
+	height:250px;
+}
+
+#softwares .rightsoftware{
+width:32%;
+	text-align: left;
+	padding:10px;
+	margin-top:10px;	
+}
+
+#softwares .rightsoftware img{
+	width:250px; 
+	height:250px;
+}
+
+.MSWindows h1, .softwaremiddle h1, .rightsoftware h1{
+	text-align: center;	
+}
+/*end of product page*/
+
+/* index page starts here*/
+
+
+.slide {
+  height: 500px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.slideshow img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  opacity: 0;
+  transition: opacity 0.75s ;
+}
+#indexpage{
+	display:flex;
+	justify-content:space-around;
+}
+.centerindex {
+	font-size:20px;
+	font-family:"Arial";
+	margin-left:15px;
+	margin-right:20px;
+	width:70%;	
+}
+.rightcenter video{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+}
+/*end of the index page*/
+
+footer{
+	background-color:#101d39;
+	color:#ffffff;
+	text-align:center;
+	padding:20px;
+	margin:0;
+}
+
+/*media queries*/
+@media only screen and (min-width: 768px) and (max-width: 959px){
+	body{
+		width:1000px; 
+	}
+
+	header{
+		background-image: url("../images/background.jpg");
+		min-height:300px;
+	}
+
+	.section-header{
+		font-family: "Arial";
+		font-weight: normal;
+		color: #333;
+		text-align: center;
+		font-size: 40px;
+	}
+
+	#indexpage{
+		flex-direction:column;
+	}
+
+	.centerindex {
+		width:100%;
+	}
+
+	.rightcenter video{
+		width:100%;
+		height:100%;
+	}
+
+	#product-container1{
+		flex-direction:row;
+	}
+
+	#products .laptop_lenovo {
+		width:100%;	
+		font-size:25px;	
+	}
+
+	#products .hp_laptop {
+		width:100%;
+		font-size:20px;
+	}
+
+	#products .acer_product{
+		width:100%;
+		font-size:25px;
+	}
+
+	#product-container2{
+		flex-direction:row;
+	}
+
+	#products2 .lenovoyoga{
+		width:100%;
+		font-size:25px;		
+	}
+
+	#products2 .hp{
+		width:100%;
+		font-size:25px;
+	}
+
+	#products2 .asus{
+		width:100%;
+		font-size:25px;;
+	}
+
+	#macbooks-container{
+		flex-direction:row;
+	}
+	
+	#macbooks .macbookleft{
+		width:100%;
+		font-size:25px;
+	}
+	  
+	#macbooks .macbookcenter{
+		width:100%;
+		font-size:25px;
+	}
+	
+	#macbooks .macbookright{
+		width:100%;
+		font-size:25px;
+	}
+	
+	#softwares-container{
+		flex-direction:row;
+	}
+	
+	#softwares .MSWindows{
+		width:100%;
+		font-size:25px;
+	}
+	
+	#softwares .softwaremiddle{
+		width:100%;
+		font-size:25px;
+	}
+	
+	#softwares .rightsoftware{
+		width:100%;
+		font-size:25px;
+	}
+}
+@media (min-width: 320px) and (max-width: 480px){
+	body{
+		width:480px; 
+
+	}
+	
+	header{
+		background-image: url("../images/background.jpg");
+		width:480px;
+	}
+
+	.section-header{
+		font-family: "Arial";
+		font-weight: normal;
+		color: #333;
+		text-align: center;
+		font-size: 40px;
+	}
+	
+	.slide{
+		height: 500px;
+		width: 400px;
+	}
+	 
+	#indexpage{
+		flex-direction:column;
+	}
+	
+	.centerindex {
+		width:90%;
+		
+	}
+	
+	.rightcenter video{
+		width:100%;
+		height:100%;
+	}
+
+	#product-container1{
+		flex-direction:column;
+	}
+	
+	#products .laptop_lenovo{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;	
+	}
+	
+	#products .hp_laptop{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	
+	#products  .acer_product{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;	
+	}
+
+	#product-container2{
+		flex-direction:column;
+	}
+	
+	#products2 .lenovoyoga{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;		
+	}
+
+	#products2 .hp{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	
+	#products2 .asus{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	
+	#macbooks-container 
+	{
+		flex-direction:column;
+	}
+
+	#macbooks .macbookleft{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	 
+	#macbooks .macbookcenter{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	
+	#macbooks .macbookright{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	
+	#softwares-container{
+		flex-direction:column;
+	}
+
+	#softwares .MSWindows{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	
+	#softwares .softwaremiddle{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+	#softwares .rightsoftware{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-size:20px;
+		text-align: center;
+	}
+}
+
+
+
